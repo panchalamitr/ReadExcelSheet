@@ -21,8 +21,6 @@ for row in sheet.iter_rows():
     for column in range(sheet.max_column):
        if row[column].value is not None:
           print(row[column].value)
-          if column == 9 or column == 13 or column == 15 or column == 38:
-            continue
           org_string += row[column].value + ", "
 
 print(org_string)
